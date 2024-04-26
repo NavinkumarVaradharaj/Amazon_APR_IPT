@@ -11,8 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		"com.hooks" }, 
 					
 				plugin = { "pretty", "html:target/cucumber-reports",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true,
-				publish = true
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true
 
 )
 public class Runner {
