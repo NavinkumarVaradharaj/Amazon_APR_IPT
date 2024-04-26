@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "src\\test\\resources\\com\\feature\\AddtoCart.feature", 
 				glue = { "com.stepdefenition","com.hooks" }, 	
 				plugin = { "pretty", "html:target/cucumber-reports",
-							"json:target/cucumber-reports",
+							"json:target/cucumber-reports.json",
 						 	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true
 				)
 public class Runner {
