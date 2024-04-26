@@ -7,13 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\resources\\com\\feature\\AddtoCart.feature", 
-				glue = { "com.stepdefenition",
-		"com.hooks" }, 
-					
+				glue = { "com.stepdefenition","com.hooks" }, 	
 				plugin = { "pretty", "html:target/cucumber-reports",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true
-
-)
+							"json:target/cucumber-reports",
+						 	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true
+				)
 public class Runner {
 
 }
